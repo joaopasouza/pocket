@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/orders', 'OrderController@index');
+Route::post('/orders', 'OrderController@store');
+Route::get('/orders/{id}/{year}/{month}/{day}', 'OrderController@show');
